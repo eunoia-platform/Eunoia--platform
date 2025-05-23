@@ -1,0 +1,259 @@
+<section class="section" aria-labelledby="welcome-title">
+  <h2 id="welcome-title">Καλωσόρισμα στην Eunoia</h2>
+  <p><strong>Καλώς ήρθες στην Eunoia</strong>, την ψηφιακή σου σύμμαχο για την υγεία, την ευεξία και έναν πιο βιώσιμο τρόπο ζωής.</p>
+  <ul>
+    <li>Καταγράφεις καθημερινά τη φυσική και ψυχική σου κατάσταση</li>
+    <li>Λαμβάνεις προσωποποιημένες συμβουλές βασισμένες σε ESG αρχές</li>
+    <li>Ορίζεις στόχους, καταγράφεις σκέψεις και βελτιώνεις τη συνολική σου ποιότητα ζωής</li>
+    <li>Έχεις πρόσβαση σε AI βοηθό ή ειδικό health coach</li>
+    <li>Όλα αυτά σε μια προσβάσιμη, ασφαλή και απλή πλατφόρμα</li>
+  </ul>
+  <p><strong>Το όραμά μας:</strong> Να ενισχύσουμε την αυτοφροντίδα και τη βιώσιμη ανάπτυξη μέσα από τεχνολογία που σέβεται τον άνθρωπο και το περιβάλλον.</p>
+</section>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eunoia - Ψηφιακή Πλατφόρμα Υγείας & ESG</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      background: #f0f4f8;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #27ae60;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background: #219150;
+    }
+    .section {
+      background: white;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .dashboard > div {
+      flex: 1 1 200px;
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .chat-box {
+      max-height: 200px;
+      overflow-y: auto;
+      background: #e1f5fe;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    .chat-user {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    .chat-bot {
+      color: #27ae60;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Eunoia - Ψηφιακή Πλατφόρμα Υγείας & ESG</h1>
+
+  <section class="section" aria-labelledby="health-tracking-title">
+    <h2 id="health-tracking-title">Καθημερινή Καταγραφή Υγείας</h2>
+    <form id="healthForm">
+      <label for="sleep">Ύπνος (ώρες):</label>
+      <input type="number" id="sleep" name="sleep" min="0" max="24" required aria-required="true" />
+
+      <label for="nutrition">Διατροφή (1-10):</label>
+      <input type="number" id="nutrition" name="nutrition" min="1" max="10" required />
+
+      <label for="exercise">Άσκηση (λεπτά):</label>
+      <input type="number" id="exercise" name="exercise" min="0" required />
+
+      <label for="mood">Ψυχική Διάθεση:</label>
+      <select id="mood" name="mood" required>
+        <option value="" disabled selected>Επίλεξε...</option>
+        <option value="Εξαιρετική">Εξαιρετική</option>
+        <option value="Καλή">Καλή</option>
+        <option value="Μέτρια">Μέτρια</option>
+        <option value="Κακή">Κακή</option>
+        <option value="Άσχημη">Άσχημη</option>
+      </select>
+
+      <button type="submit">Αποθήκευση</button>
+    </form>
+  </section>
+
+  <section class="section" aria-labelledby="esg-advice-title">
+    <h2 id="esg-advice-title">ESG-friendly Συμβουλές</h2>
+    <ul>
+      <li>Βιώσιμη διατροφή: Προτίμησε τοπικά και εποχιακά προϊόντα.</li>
+      <li>Οικολογικές πρακτικές ευεξίας: Χρησιμοποίησε φυσικά προϊόντα και μείωσε την κατανάλωση πλαστικού.</li>
+      <li>Περπάτημα ή ποδηλασία αντί αυτοκινήτου για μικρές αποστάσεις.</li>
+      <li>Προτίμησε ανακύκλωση και μείωση αποβλήτων.</li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="dashboard-title">
+    <h2 id="dashboard-title">Dashboard Υγείας</h2>
+    <div class="dashboard" aria-live="polite" aria-atomic="true" id="dashboard">
+      <div>
+        <strong>Ύπνος (ώρες):</strong> <span id="sleepStat">-</span>
+      </div>
+      <div>
+        <strong>Διατροφή (1-10):</strong> <span id="nutritionStat">-</span>
+      </div>
+      <div>
+        <strong>Άσκηση (λεπτά):</strong> <span id="exerciseStat">-</span>
+      </div>
+      <div>
+        <strong>Ψυχική Διάθεση:</strong> <span id="moodStat">-</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="journaling-title">
+    <h2 id="journaling-title">Ψυχική Υποστήριξη / Journaling</h2>
+    <textarea id="journal" aria-label="Καταγραφή σκέψεων και συναισθημάτων" placeholder="Κατέγραψε τη διάθεσή σου ή σκέψεις εδώ..."></textarea>
+    <button id="saveJournal">Αποθήκευση Σημειώσεων</button>
+  </section>
+
+  <section class="section" aria-labelledby="goals-title">
+    <h2 id="goals-title">Στόχοι & Υπενθυμίσεις</h2>
+    <ul>
+      <li>Πίνε νερό τακτικά</li>
+      <li>Περπάτα καθημερινά</li>
+      <li>Χαλάρωσε και πάρε βαθιές ανάσες</li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="chat-title">
+    <h2 id="chat-title">Chat με AI Βοηθό</h2>
+    <div class="chat-box" id="chatBox" aria-live="polite" aria-atomic="true"></div>
+    <input type="text" id="chatInput" aria-label="Πληκτρολόγησε το μήνυμά σου" placeholder="Γράψε κάτι..." />
+    <button id="sendChat">Αποστολή</button>
+  </section>
+
+  <script>
+    // Αποθήκευση και εμφάνιση δεδομένων υγείας
+    const form = document.getElementById('healthForm');
+    const sleepStat = document.getElementById('sleepStat');
+    const nutritionStat = document.getElementById('nutritionStat');
+    const exerciseStat = document.getElementById('exerciseStat');
+    const moodStat = document.getElementById('moodStat');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const sleep = form.sleep.value;
+      const nutrition = form.nutrition.value;
+      const exercise = form.exercise.value;
+      const mood = form.mood.value;
+
+      localStorage.setItem('sleep', sleep);
+      localStorage.setItem('nutrition', nutrition);
+      localStorage.setItem('exercise', exercise);
+      localStorage.setItem('mood', mood);
+
+      updateDashboard();
+      alert('Τα δεδομένα αποθηκεύτηκαν!');
+      form.reset();
+    });
+
+    function updateDashboard() {
+      sleepStat.textContent = localStorage.getItem('sleep') || '-';
+      nutritionStat.textContent = localStorage.getItem('nutrition') || '-';
+      exerciseStat.textContent = localStorage.getItem('exercise') || '-';
+      moodStat.textContent = localStorage.getItem('mood') || '-';
+    }
+    updateDashboard();
+
+    // Journaling
+    const journal = document.getElementById('journal');
+    const saveJournalBtn = document.getElementById('saveJournal');
+
+    saveJournalBtn.addEventListener('click', () => {
+      localStorage.setItem('journal', journal.value);
+      alert('Οι σημειώσεις αποθηκεύτηκαν!');
+    });
+
+    // Φόρτωση σημειώσεων
+    journal.value = localStorage.getItem('journal') || '';
+
+    // Chat AI βοηθός (απλό παράδειγμα)
+    const chatBox = document.getElementById('chatBox');
+    const chatInput = document.getElementById('chatInput');
+    const sendChatBtn = document.getElementById('sendChat');
+
+    function appendMessage(sender, text) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = sender === 'user' ? 'chat-user' : 'chat-bot';
+      msgDiv.textContent = (sender === 'user' ? 'Εσύ: ' : 'Bot: ') + text;
+      chatBox.appendChild(msgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    sendChatBtn.addEventListener('click', () => {
+      const message = chatInput.value.trim();
+      if (!message) return;
+      appendMessage('user', message);
+
+      // Απλή απάντηση bot (μπορεί να αναπτυχθεί)
+      let response = 'Συγγνώμη, δεν μπορώ να απαντήσω αυτή τη στιγμή.';
+      if (message.toLowerCase().includes('νερό')) {
+        response = 'Μην ξεχνάς να πίνεις αρκετό νερό καθημερινά!';
+      } else if (message.toLowerCase().includes('άσκηση')) {
+        response = 'Η άσκηση βελτιώνει τη διάθεση και την υγεία σου.';
+      } else if (message.toLowerCase().includes('διατροφή')) {
+        response = 'Προτίμησε φρέσκα και τοπικά προϊόντα για καλύτερη διατροφή.';
+      }
+      setTimeout(() => appendMessage('bot', response), 800);
+
+      chatInput.value = '';
+      chatInput.focus();
+    });
+  </script>
+</body>
+</html>
+<footer style="text-align:center; margin-top:40px; padding:10px; font-size:0.9em; color:#666; border-top: 1px solid #ccc;">
+  © 2025 Eunoia. Δημιουργός: ZiraRustia
+</footer>
+
